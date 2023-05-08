@@ -39,7 +39,7 @@ form {
     font-weight: 400;
 }
 
-.first {
+.form-input {
     padding: 0.3em 0.5em 0.4em;
     background-color: #f3fafd;
     border: solid 2px #217093;
@@ -57,7 +57,7 @@ form {
 .form-btn {
     margin: 0;
     padding: 0.5em;
-    background-color: #4eb8dd;
+    background-color: #00539C;
     border: none;
     border-radius: 4px;
     box-sizing: border-box;
@@ -76,10 +76,25 @@ form {
     cursor: pointer;
 }
 
+#number {
+    height: 30px;
+    width: 100%;
+    margin: 10px 0 0 0;
+    border: solid 1px #217093;
+    border-radius: 4px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#number:hover {
+    border: solid 1px #217093;
+    cursor: pointer;
+}
+
 label {
     font-size: 25px;
     margin: 0 0 10px;
-    color: #00539C;
+    color: #EEA47F;
     font-family: sans-serif;
     display: block;
 }
