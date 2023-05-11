@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9f2064d785.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>BMI CALCULATOR</title>
 </head>
 
 <body>
-    <header>
-        <h1>BODY MASS INDEX(BMI)</h1>
-    </header>
 
     <div class="container">
+
         <form name="myform" action="">
+            <h1 id="firsthead">BMI Kalkulator</h1>
+            <div class="gen--btn">
+                <h4>GENDER</h4>
+                <button class="venus"><i class="fas fa-venus fa-5x"></i></button>
+                <button class="mars"><i class="fas fa-mars fa-5x"></i></button>
+            </div>
+
             <label for="input" class="label">WEIGHT</label><input type="number" name="fst" class="form-input"
                 required /><select name="measure" id="number">
                 <option value="kilo" id="kilo">Kilogram</option>
@@ -27,7 +33,8 @@
                 <option value="feet" id="feet">Feet</option>
             </select>
             <br>
-            <label for="input" class="label">TOTAL</label><input type="text" name="result" class="form-input" id="result"><br>
+            <label for="input" class="label">TOTAL</label><input type="text" name="result" class="form-input"
+                id="result"><br>
             <button class="form-btn" onclick="calc()">Calculate</button>
         </form>
     </div>

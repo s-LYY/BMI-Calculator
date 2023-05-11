@@ -2,20 +2,6 @@
     box-sizing: border-box;
 } */
 
-header {
-    padding: 30px;
-    margin-left: -10px;
-    margin-top: -10px;
-    background-color: #5B84B1FF;
-    width: 100%;
-}
-
-h1 {
-    font-size: 30px;
-    color: #FC766AFF;
-    font-family: "Ubuntu Mono";
-}
-
 .container {
     display: flex;
     align-items: center;
@@ -23,11 +9,47 @@ h1 {
     margin-top: 50px;
 }
 
+#firsthead {
+    font-family: "Comfortaa";
+}
+.venus {
+    height: 90px;
+    width: 120px;
+    border-radius: 4px;
+    border: 1px gray;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 70px #bebebe,
+        -10px -10px 70px #ffffff;
+    margin-right: 35px;
+    margin-left: 10px;
+}
+
+.mars {
+    height: 90px;
+    width: 120px;
+    border-radius: 4px;
+    border: 1px gray;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 70px #bebebe,
+        -10px -10px 70px #ffffff;
+    /* margin-right: 15px; */
+    margin-left: -10px;
+}
+
+.mars:focus {
+    background-color: rgb(30, 48, 80);
+    color: white;
+}
+.venus:hover {
+    background-color: rgb(30, 48, 80);
+    color: white;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 500px;
+    width: 380px;
+    height: 700px;
     background-color: #FFF;
     margin: 0;
     margin-bottom: 50px;
@@ -97,16 +119,18 @@ form {
 }
 
 label {
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 10px;
     color: #FC766AFF;
     font-family: "Ubuntu Mono";
     display: block;
 }
-#result{
+
+#result {
     font-size: 12px;
 }
+
 #number3 {
     margin-bottom: 15px;
 }
