@@ -1,7 +1,9 @@
 /* * {
     box-sizing: border-box;
 } */
-
+body{
+    font-family: "Comfortaa";
+}
 .container {
     display: flex;
     align-items: center;
@@ -11,6 +13,10 @@
 
 #firsthead {
     font-family: "Comfortaa";
+}
+
+.gen--btn{
+    margin-bottom: 30px;
 }
 .venus {
     height: 90px;
@@ -36,7 +42,7 @@
     margin-left: -10px;
 }
 
-.mars:focus {
+.mars:hover {
     background-color: rgb(30, 48, 80);
     color: white;
 }
@@ -58,7 +64,7 @@ form {
     box-sizing: border-box;
     border: solid 1px #DDD;
     border-radius: 0.5em;
-    font-family: "Ubuntu Mono";
+    font-family: "Comfortaa";
     font-size: 16px;
     font-weight: 400;
 }
@@ -108,7 +114,7 @@ form {
     border-radius: 4px;
     font-size: 17px;
     font-weight: 300;
-    font-family: 'Ubuntu Mono';
+    font-family: "Comfortaa";
 }
 
 #number:hover {
@@ -122,13 +128,13 @@ label {
     font-size: 15px;
     font-weight: 600;
     margin: 0 0 10px;
-    color: #FC766AFF;
-    font-family: "Ubuntu Mono";
+    color: #353538;
+    font-family: "Comfortaa";
     display: block;
 }
 
 #result {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #number3 {
