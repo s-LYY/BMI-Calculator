@@ -18,44 +18,12 @@ body{
 .gen--btn{
     margin-bottom: 30px;
 }
-.venus {
-    height: 90px;
-    width: 120px;
-    border-radius: 4px;
-    border: 1px gray;
-    background: #e0e0e0;
-    box-shadow: 10px 10px 70px #bebebe,
-        -10px -10px 70px #ffffff;
-    margin-right: 35px;
-    margin-left: 10px;
-}
-
-.mars {
-    height: 90px;
-    width: 120px;
-    border-radius: 4px;
-    border: 1px gray;
-    background: #e0e0e0;
-    box-shadow: 10px 10px 70px #bebebe,
-        -10px -10px 70px #ffffff;
-    /* margin-right: 15px; */
-    margin-left: -10px;
-}
-
-.mars:hover {
-    background-color: rgb(30, 48, 80);
-    color: white;
-}
-.venus:hover {
-    background-color: rgb(30, 48, 80);
-    color: white;
-}
 
 form {
     display: flex;
     flex-direction: column;
     width: 380px;
-    height: 700px;
+    height: 600px;
     background-color: #FFF;
     margin: 0;
     margin-bottom: 50px;
@@ -71,11 +39,12 @@ form {
 
 .form-input {
     padding: 0.3em 0.5em 0.4em;
+    margin-bottom: 5px;
     background-color: #f3fafd;
     border: solid 2px #217093;
     border-radius: 4px;
     box-sizing: border-box;
-    width: 100%;
+    width: 30%;
     height: 40px;
     font-size: 1.3em;
     color: #353538;
@@ -105,7 +74,7 @@ form {
     background-color: deepskyblue;
     cursor: pointer;
 }
-
+/* 
 #number {
     height: 30px;
     width: 100%;
@@ -115,18 +84,18 @@ form {
     font-size: 17px;
     font-weight: 300;
     font-family: "Comfortaa";
-}
+} */
 
-#number:hover {
+/* #number:hover {
     border: solid 1px #217093;
     cursor: pointer;
     background-color: deepskyblue;
     color: #FFF;
-}
+} */
 
 label {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0 0 10px;
     color: #353538;
     font-family: "Comfortaa";
@@ -137,9 +106,9 @@ label {
     font-size: 15px;
 }
 
-#number3 {
+/* #number3 {
     margin-bottom: 15px;
-}
+} */
 
 footer {
     background-color: #5B84B1FF;
@@ -154,4 +123,9 @@ footer {
     margin: auto;
     text-align: center;
     color: #FC766AFF;
+}
+#ass{
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 20px;
 }
