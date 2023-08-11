@@ -1,37 +1,46 @@
 function calc() {
   //Get radio units
-  const heightInput = document.getElementById("heightInput").value;
-  const heightRadios = document.getElementsByName("length");
-  const heightUnit = heightRadios[0].checked ? "m" : "ft";
-
-  const weightInput = document.getElementById("weightInput").value;
-  const weightRadios = document.getElementsByName("mass");
-  const weightUnit = weightRadios[0].checked ? "kg" : "lbs";
+  let heightInput = document.getElementById("heightInput").value;
+  let weightInput = document.getElementById("weightInput").value;
+  let pound = document.getElementById("lbs");
+  let ft = document.getElementById("ft");
 
   let height, weight;
-  if (heightUnit == ft) {
-    height = heightInput * 0.305;
+  if (ft.checked) {
+    height = heightInput / 0.305;
   } else {
     height = heightInput;
   }
 
-  if (weightUnit == lbs) {
-    weight = weightInput * 0.454;
+  if (pound.checked) {
+    weight = weightInput / 0.454;
   } else {
     weight = weightInput;
   }
 
   let result = Math.floor(weight / (height * height));
   let output = document.getElementById("output");
-  output.innerHTML = `your bmi is ${result}`;
-  // if (result <= 18.5) {
-  //   output.innerHTML = `Your BMI is ${result} - Underweight`;
-  // } else if ((result) => 18.5 && result <= 24.5) {
-  //   output.innerHTML = `Your BMI is ${result} - Healthy`;
-  // } else {
-  //   output.innerHTML = `Your BMI is ${result} - Obese`;
-  // }
+  // output.innerHTML = `Your BMI is ${result}`;
+  if (result <= 18.5) {
+    output.innerHTML = `Your BMI is ${result} - Underweight`;
+  } else if ((result) => 18.5 && result <= 24.5) {
+    output.innerHTML = `Your BMI is ${result} - Healthy`;
+  } else {
+    output.innerHTML = `Your BMI is ${result} - Obese`;
+  }
 }
+
+
+
+
+//CUT AND PASTE
+// let heightInput = document.getElementById("heightInput").value;
+// let heightRadios = document.getElementsByName("length");
+// let heightUnit = heightRadios[0].checked ? "m" : "ft";
+
+// let weightInput = document.getElementById("weightInput").value;
+// let weightRadios = document.getElementsByName("mass");
+// let weightUnit = weightRadios[0].checked ? "kg" : "lbs";
 
 //FIRST TEST
 
