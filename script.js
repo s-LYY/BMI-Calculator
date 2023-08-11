@@ -3,17 +3,17 @@ function calc() {
   let heightInput = document.getElementById("heightInput").value;
   let weightInput = document.getElementById("weightInput").value;
   let pound = document.getElementById("lbs");
-  let ft = document.getElementById("ft");
+  let inc = document.getElementById("inc");
 
   let height, weight;
-  if (ft.checked) {
-    height = heightInput / 0.305;
+  if (inc.checked) {
+    height = heightInput * 39.37;
   } else {
     height = heightInput;
   }
 
   if (pound.checked) {
-    weight = weightInput / 0.454;
+    weight = weightInput * 2.20462;
   } else {
     weight = weightInput;
   }
